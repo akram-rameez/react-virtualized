@@ -8,6 +8,7 @@ import styles from './CellMeasurer.example.css'
 import DynamicWidthGrid from './CellMeasurer.DynamicWidthGrid.example.js'
 import DynamiHeightGrid from './CellMeasurer.DynamiHeightGrid.example.js'
 import DynamiWidthMultiGrid from './CellMeasurer.DynamiWidthMultiGrid.example.js'
+import DynamiHeightMultiGrid from './CellMeasurer.DynamiHeightMultiGrid.example.js'
 import DynamicHeightList from './CellMeasurer.DynamicHeightList.example.js'
 import DynamicHeightTableColumn from './CellMeasurer.DynamicHeightTableColumn.example.js'
 
@@ -15,6 +16,7 @@ const demoComponents = [
   DynamicWidthGrid,
   DynamiHeightGrid,
   DynamiWidthMultiGrid,
+  DynamiHeightMultiGrid,
   DynamicHeightList,
   DynamicHeightTableColumn
 ]
@@ -67,12 +69,13 @@ export default class CellMeasurerExample extends PureComponent {
 
                 <strong>MultiGrid</strong>:
                 <Tab id={2} {...buttonProps}>dynamic width text</Tab>
+                <Tab id={3} {...buttonProps}>dynamic height text</Tab>
 
                 <strong>List</strong>:
-                <Tab id={3} {...buttonProps}>dynamic height image</Tab>
+                <Tab id={4} {...buttonProps}>dynamic height image</Tab>
 
                 <strong>Table</strong>:
-                <Tab id={4} {...buttonProps}>mixed fixed and dynamic height text</Tab>
+                <Tab id={5} {...buttonProps}>mixed fixed and dynamic height text</Tab>
               </div>
 
               <DemoComponent
